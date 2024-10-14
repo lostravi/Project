@@ -1,1 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: #000;
+    color: #fff;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #333;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.cell.disabled {
+    pointer-events: none;
+    background-color: #000;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#status {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 18px;
+}
 
